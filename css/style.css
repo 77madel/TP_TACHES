@@ -72,30 +72,30 @@ ul li{
     position: relative;
 }
 
-/*ul li::before{*/
-/*    content: '';*/
-/*    position: absolute;*/
-/*    height: 28px;*/
-/*    width: 28px;*/
-/*    border-radius: 50%;*/
-/*    background-image: url(/img/yes.png);*/
-/*    background-size: cover;*/
-/*    background-position: center;*/
-/*    top: 12px;*/
-/*    left: 8px;*/
-/*}*/
+/* ul li::before{
+    content: '';
+    position: absolute;
+    height: 28px;
+    width: 28px;
+    border-radius: 50%;
+    background-color: rgba(0,0,0,0.2);
+
+    top: 12px;
+    left: 8px;
+} */
 
 
-/*ul li.checked{*/
-/*    color: #555;*/
-/*    text-decoration: line-through;*/
-/*}*/
+ul li.checked{
+    color: #555;
+    text-decoration: line-through;
+}
 
-/*ul li.checked::before{*/
-/*    background-image: url('/img/yes.png');*/
-/*}*/
+/* ul li.checked::before{
+    background: transparent;
+    background-image: url('/yes.png');
+} */
 
-ul li::before {
+ ul li::before {
     content: '';
     position: absolute;
     height: 28px;
@@ -116,7 +116,7 @@ ul li.checked::before {
     background-image: url('/img/yes.png');
     background-size: cover;
     background-position: center;
-}
+} 
 
 ul li span{
     position: absolute;
