@@ -1,21 +1,32 @@
-const inputBox = document.getElementById("input-box");
-const listContainer = document.getElementById("list-container");
+// const inputBox = document.getElementById("input-box");
+// const inputBox1 = document.getElementById("input-box1");
+// const inputBox2 = document.getElementById("input-box2");
+    
+
+ const listContainer = document.getElementById("list-container");
 
 function ajouterTache(){
-    if(inputBox.value === '')
+
+    let tache = document.forms["myForm"]["tache"].value;
+    let date =  document.forms["myForm"]["date"].value;
+    let priori = document.forms["myForm"]["priori"].value;
+    
+
+    if(tache == "" || date == "" || priori == "")
     {
         alert("Veuillez remplir le champs");
+    
     }
     else
     {
         let li = document.createElement("li");
-        li.innerHTML = inputBox.value;
+        li.innerHTML = tache + " " + date + " " + priori;
         listContainer.appendChild(li);
         let span = document.createElement("span");
         span.innerHTML = "\u00d7";
         li.appendChild(span);
     }
-    inputBox.value = "";
+
     saveData();
 }
 

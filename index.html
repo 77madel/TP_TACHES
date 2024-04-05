@@ -1,26 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
     <title>TP Gestions des Taches</title>
 </head>
+
 <body>
     <div class="container">
-         <div class="taches-app">
-            <h2>LES TACHES A FAIRE <img src="img/to-do-list.png"alt="" ></h2>
-            <div class="row">
-                <input type="text" id="input-box" placeholder="Nouveau tache">
+        <div class="taches-app">
+            <h2>LES TACHES A FAIRE <img src="img/to-do-list.png" alt=""></h2>
+            <form name="myForm" >
+
+
+                <div class="row">
+                    <input type="text" id="tache" name="tache" placeholder="Nouveau tache">
+                    <!-- onclick="ajouterTache()" -->
+                </div>
+                <div class="input">
+                    <div class="input-box1">
+                        <input type="Date" id="input-box1" name="date" placeholder="Date Echeange">
+                    </div>
+
+                    <div class="input-box2">
+                        <input type="number" name="priori" id="input-box2" placeholder="Priorité">
+                    </div>
+                </div>
                 <button onclick="ajouterTache()">Ajouter</button>
-            </div>
+            </form>
             <ul id="list-container">
                 <!-- <li class="checked">Task1</li>
-                <li>Task2</li>
-                <li>Task3</li> -->
-             </ul>
-         </div>
+                <li>Task2 <div>yygchjgzjg</div> <div>NV1</span></li>
+                <li>Task3</li>  -->
+            </ul>
+        </div>
     </div>
     <script type="text/javascript" src="js/script.js"></script>
 </body>
+
 </html>

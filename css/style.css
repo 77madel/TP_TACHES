@@ -43,24 +43,54 @@
     margin-bottom: 25px;
 }
 
+
+ .input{
+    display: flex;
+    align-items: center;
+} 
+
+ .input-box1{
+    margin: 0 5px;
+    background: #edeef0;
+    outline: none; 
+    background: transparent;
+    font-weight: 14px;
+    border-radius: 30px;
+    background: #edeef0;
+    border: 1px solid #edeef0;
+} 
+
+.input-box2 input[type="number"]{
+    background: #edeef0;
+    outline: none; 
+    background: transparent;
+    
+    font-weight: 14px;
+    border-radius: 30px;
+    background: #edeef0;
+    border: 1px solid #edeef0;
+     width: 50%; 
+} 
+
 input{
     flex: 1;
     border: none;
     outline: none;
     background: transparent;
-    padding: 10px;
+    padding: 12px;
     font-weight: 14px;
 }
 
 button{
     border: none;
     outline: none;
-    padding: 16px 50px;
+    padding: 10px 40px;
     background: #ff5945;
     color: #fff;
     font-size: 16px;
     cursor: pointer;
     border-radius: 40px;
+    margin-top: 10px;
 }
 
 ul li{
@@ -70,6 +100,15 @@ ul li{
     user-select: none;
     cursor: pointer;
     position: relative;
+    display: flex;
+
+}
+
+ul li div{
+    display: flex;
+    align-items: center;
+    color: red;
+    margin-left: 25px;
 }
 
 /* ul li::before{
